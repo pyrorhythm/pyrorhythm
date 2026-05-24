@@ -1,0 +1,14 @@
+name: 📙 Terminal Glass template
+description: |
+  A liquid-glass, Ghostty-like SSH session terminal (Maple Mono NF).
+examples:
+  default: https://github.com/lowlighter/metrics/blob/examples/metrics.terminal.svg
+index: 2
+supports:
+  - user
+  - organization
+formats:
+  - svg
+  - png
+  - jpeg
+  - json

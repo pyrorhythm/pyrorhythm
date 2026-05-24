@@ -6,7 +6,7 @@ on:
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
-    environment: 
+    environment:
       name: production
     permissions:
       contents: write
@@ -14,3 +14,8 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
+          filename: github-metrics.svg
+          experimental_features: metrics.setup.community.templates
+          setup_community_templates: pyrorhythm/pyrorhythm@main:terminal-glass+trust
+          template: "@terminal-glass"
+          base: header, activity, community, repositories, metadata
